@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota Corolla 2010 XEI</title>
+
+        <style>
+        body {
+            /* Fundo num tom cinza muito escuro, quase preto */
+            background-color: #0d0d0d; 
+            color: #d1d1d1; 
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 4px solid #8e8e8e; /* Prata para lembrar os detalhes XEI */
+        }
+
+        h1 {
+            color: #ffffff;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #8e8e8e;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            text-shadow: 0px 0px 8px #ffffff;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        section {
+            background-color: #1f1f1f;
+            margin-bottom: 25px;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 5px solid #8e8e8e; /* Detalhe lateral prata */
+        }
+
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .foto-corolla {
+            width: 100%;
+            max-width: 700px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 4px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.8);
+        }
+
+        .especificacoes {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            color: #aaa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #111;
+            color: #555;
+        }
+
+        section {
+    background-color: #1f1f1f;
+    margin-bottom: 30px; /* Afasta uma seção da outra */
+    padding: 40px;      /* Dá espaço interno para o texto não encostar na borda */
+    border-radius: 12px; 
+    border: 1px solid #333; /* Uma borda sutil */
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Quando o mouse estiver sobre a section */
+section:hover {
+    border-left: 5px solid #ffffff; /* A borda prata vira branca brilhante */
+    background-color: #252525;    /* O fundo clareia um pouquinho */
+    transition: 0.4s;              /* Faz a mudança ser suave, não um susto */
+    transform: scale(1.02);        /* Dá um leve "zoom" na caixa */
+}
+
+/* Quando o mouse estiver sobre a imagem */
+.foto-corolla:hover {
+    filter: brightness(1.2);       /* Deixa a foto mais clara */
+    cursor: pointer;               /* Transforma o mouse naquela mãozinha */
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.container-flex {
+    display: flex;          /* ATIVA O MODO FLEX! */
+    align-items: center;    /* Alinha tudo no meio (altura) */
+    justify-content: space-between; /* Dá um espaço igual entre o texto e a foto */
+    gap: 20px;              /* Cria um buraquinho entre as duas caixas */
+}
+
+.texto-ficha {
+    flex: 1; /* Faz o texto ocupar o espaço que sobrar */
+}
+
+.foto-pequena {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+/* Quando a tela for menor que 600 pixels (celulares) */
+@media (max-width: 600px) {
+    .container-flex {
+        flex-direction: column; /* Em vez de lado a lado, fica um embaixo do outro */
+        text-align: center;      /* Centraliza o texto no celular */
+    }
+
+    .foto-pequena {
+        width: 100%;            /* A foto ocupa a largura toda do celular */
+        max-width: none;
+    }
+
+    header h1 {
+        font-size: 1.5rem;      /* Diminui o título para caber na tela pequena */
+    }
+
+    nav a {
+        display: block;         /* Faz os links virarem botões um embaixo do outro */
+        margin: 10px 0;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 15px;
+    background-color: #8e8e8e;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #fff;
+    transform: scale(1.02);
+}
+    </style>
+</head>
+<body>
+
+</a>
+    <header>
+        <h1>Corolla XEI 2010</h1>
+        <nav>
+            <a href="https://www.toyota.com.br" target="_blank">História Toyota</a>
+            <a href="#galeria">Galeria</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container-flex">
+    <div class="texto-ficha">
+        <h2>Ficha Técnica XEI</h2>
+        <p>Motor: 1.8 16V Dual VVT-i</p>
+        <p>Potência: 136 cv</p>
+        <p>Consumo: Econômico para a categoria</p>
+    </div>
+    
+    <div class="foto-detalhe">
+        <img src="roda-corolla.png" alt="Roda do Corolla" class="foto-pequena">
+    </div>
+</section>
+        <section>
+            <h2>O Sedã Inquebrável</h2>
+            <p>O Corolla 2010 na versão XEI é conhecido pelo seu conforto, motor 1.8 Flex de 136cv e a lendária confiabilidade mecânica da Toyota.</p>
+            <ul class="especificacoes">
+                <li> Motor 1.8 VVTi</li>
+                <li> Câmbio Manual</li>
+                <li> Bancos de Couro</li>
+                <li> O inquebravel que quebrou na minha mão</li>
+            </ul>
+        </section>
+
+        <section id="galeria">
+            <h2>Visual do Carro</h2>
+            <div class="projeto">
+                <h3>Corolla Preto - Elegância Atemporal</h3>
+                <img src="corolla.png" alt="Toyota Corolla 2010 Preto" class="foto-corolla">
+            </div>
+        </section>
+
+        <section id="contato">
+    <h2>Tenho Interesse</h2>
+    <p>Deixe seus dados e entrarei em contato para negociar este Corolla.</p>
+    
+    <form id="meuFormulario">
+        <input type="text" id="nome" placeholder="Seu Nome" required>
+        <input type="email" id="email" placeholder="Seu E-mail" required>
+        <textarea id="mensagem" rows="4" placeholder="Sua proposta ou dúvida..."></textarea>
+        <button type="submit">Enviar Proposta</button>
+    </form>
+
+    <div id="resposta" style="margin-top: 20px; font-weight: bold; color: #00ff00;"></div>
+</section>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Gustavo | Toyota Enthusiast</p>
+    </footer>
+<script>
+    // 1. Pega o formulário pelo ID
+    const form = document.getElementById('meuFormulario');
+    const resposta = document.getElementById('resposta');
+
+    // 2. Escuta quando o usuário clica no botão de enviar
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede o site de atualizar sozinho
+
+        // 3. Pega o nome digitado
+        const nomeUsuario = document.getElementById('nome').value;
+
+        // 4. Mostra a mensagem de sucesso
+        resposta.innerText = "Obrigado, " + nomeUsuario + "! Sua proposta pelo Corolla foi enviada com sucesso.";
+        
+        // 5. Limpa o formulário
+        form.reset();
+    });
+</script>
+</body>
+</html>
